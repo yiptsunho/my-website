@@ -1,0 +1,9 @@
+export const FIRST_TURN = 'X'
+export const STATE_ARRAY = ['-','-','-','-','-','-','-','-','-']
+export const WIN_MESSAGE = " is the winner!"
+export const DRAW_MESSAGE = "Oops! No one wins."
+export const TEMPLATE_ID = 'template_5nw0dxf'
+export const SERVICE_ID = 'service_w9cr96i'
+export const PUBLIC_KEY = 'DFmj06fhMZlZBbBJ6'
+export const API_HOST = "http://localhost:3000"
+export const API_GET_DATA = `${API_HOST}/posts/1`

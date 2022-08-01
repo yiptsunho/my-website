@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --color-grey: #363636;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.container-fluid.bg {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+.img {
+  display: block;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+/*
+max-width: 400px;
+max-height: 262.58px;
+*/
+
+@media screen and (max-width: 1024px) {
+  .container-fluid {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-fluid {
+    width: var(--container-width-sm);
+  }
+}
+
+.home,
+.resume,
+.projects,
+.contact {
+  display: flex;
+  height: 90vh;
+  top: 0px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/*
+.ticTacToe,
+.toDoList,
+.calculator {
+  
+}
+*/
+
+.resume {
+  background-image: url("./assets/images/img-1.jpg");
+}
+
+.projects {
+  background-image: url("./assets/images/img-2.jpg");
+}
+
+.contact {
+  background-image: url("./assets/images/img-3.jpg");
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: url("../public/images/img-home.jpg") center center/cover
+  no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
