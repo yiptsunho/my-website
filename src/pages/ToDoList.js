@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef, useReducer } from "react";
-import { API_GET_DATA } from '../js/Constants';
-import Edit from "../js/Edit";
-import List from "../js/List";
-import "../css/ToDoList.css";
+import { API_GET_DATA } from '../components/js/Constants';
+import Edit from "../components/js/Edit";
+import List from "../components/js/List";
+import "../components/css/ToDoList.css";
 
 async function fetchData(setData) {
     const res = await fetch(API_GET_DATA)

@@ -1,4 +1,4 @@
-import { useState, useReducer } from "react";
+import { useState } from "react";
 import { v4 } from "uuid";
 
 const Edit = ({ add, submittingStatus }) => {

@@ -2,11 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Scrollbar() {
+function ScrollBar() {
     const [activeSec, setActiveSec] = useState("#")
-
-    //var activeSecCopy = activeSec
-    /*console.log({activeSecCopy})*/
 
   return (
     <div className="scrollbar">
@@ -29,4 +26,4 @@ function Scrollbar() {
   )
 };
 
-export default Scrollbar;
+export default ScrollBar;

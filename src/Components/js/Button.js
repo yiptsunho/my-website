@@ -4,95 +4,69 @@ const Button = ({ result, setResult }) => {
     const operatorArray = ["+", "-", "*", "/"]
 
     function lastCharacterIsNumber(string) {
-        console.log("valid?", numberArray.includes(string.slice(-1)))
         return (numberArray.includes(string.slice(-1)))
     }
 
     function lastCharacterIsOperator(string) {
-        console.log("valid?", operatorArray.includes(string.slice(-1)))
         return (operatorArray.includes(string.slice(-1)))
     }
 
     function addNumber(number) {
         if (result == "0") {
-            //equation.current = number
             setResult(number)
         } else {
-            //equation.current = equation.current + number
             setResult(prev => prev + number)
         }
-        //console.log("equation", equation.current)
     }
 
     function clear() {
-        //equation.current = ""
         setResult("0")
-        //console.log("equation", equation.current)
     }
 
     function addBracket(bracket) {
-        //equation.current = equation.current + "("
         if (result == "0") {
-            //equation.current = number
             setResult(bracket)
         } else {
-            //equation.current = equation.current + number
             setResult(prev => prev + bracket)
         }
-        //console.log("equation", equation.current)
     }
 
     function add() {
         if (lastCharacterIsNumber(result)) {
-            //equation.current = equation.current + "+"
             setResult(prev => prev + "+")
         } else if (lastCharacterIsOperator(result)) {
-            //equation.current = equation.current.slice(0, -1) + "+"
             setResult(prev => prev.slice(0, -1) + "+")
         }
-        //console.log("equation", equation.current)
     }
 
     function minus() {
         if (lastCharacterIsNumber(result)) {
-            //equation.current = equation.current+ "-"
             setResult(prev => prev + "-")
         } else if (lastCharacterIsOperator(result)) {
-            //equation.current = equation.current.slice(0, -1) + "-"
             setResult(prev => prev.slice(0, -1) + "-")
         }
-        //console.log("equation", equation.current)
     }
 
     function multiply() {
         if (lastCharacterIsNumber(result)) {
-            //equation.current = equation.current + "*"
             setResult(prev => prev + "*")
         } else if (lastCharacterIsOperator(result)) {
-            //equation.current = equation.current.slice(0, -1) + "*"
             setResult(prev => prev.slice(0, -1) + "*")
         }
-        //console.log("equation", equation.current)
     }
 
     function divide() {
         if (lastCharacterIsNumber(result)) {
-            //equation.current = equation.current + "/"
             setResult(prev => prev + "/")
         } else if (lastCharacterIsOperator(result)) {
-            //equation.current = equation.current.slice(0, -1) + "/"
             setResult(prev => prev.slice(0, -1) + "/")
         }
-        //console.log("equation", equation.current)
     }
 
     function equalTo() {
         if (lastCharacterIsNumber(result)) {
-            //const answer = eval(result).toString()
             setResult(eval(result).toString())
-            //equation.current = answer
         }
-        //console.log("equation", equation.current)
     }
 
     return (

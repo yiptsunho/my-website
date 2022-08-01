@@ -1,29 +1,21 @@
 import './App.css';
-import Navbar from './Components/js/Navbar';
-import Home from './Components/Pages/Home';
-import Projects from './Components/Pages/Projects';
-import Contact from './Components/Pages/Contact';
+import NavBar from './components/js/NavBar';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Clock from './Components/js/Clock';
-import TicTacToe from './Components/Pages/TicTacToe';
-import Calculator from './Components/Pages/Calculator';
-import Resume from './Components/Pages/Resume';
-import ToDoList from './Components/Pages/ToDoList'
+import Clock from './components/js/Clock';
+import TicTacToe from './pages/TicTacToe';
+import Calculator from './pages/Calculator';
+import Resume from './pages/Resume';
+import ToDoList from './pages/ToDoList'
 
 function App() {
-
-    /*const scrollToTop = (props) => {
-    const location = useLocation();
-    useEffect(() => {
-      window.scrollTo(0,0);
-    }, [location]);
-  }*/
-
 
   return (
     <>
       <Router>
-        <Navbar />
+        <NavBar />
         <Clock />
         <Routes>
             <Route exact path="/my-website" element={<Home />}/>

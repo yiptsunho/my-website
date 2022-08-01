@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ticContext } from "../Pages/TicTacToe";
+import { ticContext } from "../../pages/TicTacToe";
 
 const Square = ({ number }) => {
 
@@ -12,7 +12,7 @@ const Square = ({ number }) => {
       setState(newState)
       changeTurn()
     } else {
-      return //if user accidentally clicks a non-empty square, do nothing
+      return
     }
   }
 

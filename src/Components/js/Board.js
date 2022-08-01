@@ -1,13 +1,10 @@
 import { useContext } from 'react';
-import { ticContext } from '../Pages/TicTacToe';
+import { ticContext } from '../../pages/TicTacToe';
 import Square from './Square';
 
 const Board = () => {
 
   const { state, setState, turn, setTurn } = useContext(ticContext)
-
-  //console.log({turn})
-  //console.log({state})
   
   return (
   <ticContext.Provider value={{ state, setState, turn, setTurn }}>

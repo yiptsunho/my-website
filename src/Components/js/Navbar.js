@@ -1,8 +1,8 @@
 import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../css/Navbar.css';
+import '../css/NavBar.css';
 
-function Navbar() {
+function NavBar() {
 
   const [click, setClick] = useState(false)
   function handleClick() {setClick(!click)}
@@ -36,9 +36,6 @@ function Navbar() {
                 <li><Link to="/projects/calculator" className="dropdown-item">
                     Calculator
                 </Link></li>
-                {/*<li><Link to="/projects/minesweeper" className="dropdown-item">
-                    Minesweeper
-                </Link></li>*/}
                 <li><Link to="/projects/todolist" className="dropdown-item">
                     To do list
                 </Link></li>
@@ -50,17 +47,10 @@ function Navbar() {
         <li>
         <Link to="/contact" onClick={handleClick}>Contact</Link>
         </li>
-        {/*
-        <li> 
-        <Link to="/oldtesting" onClick={handleClick}>OldTesting</Link>
-        </li>
-        <li> 
-        <Link to="/testing" onClick={handleClick}>Testing</Link>
-        </li>
-        */}
         <li className="nav-item">
-          <a href="https://www.facebook.com/jacky.yip.908" target="_blank"><i className="fa-brands fa-facebook px-3"/></a>
+          <a href="https://github.com/yiptsunho" target="_blank"><i className="fa-brands fa-github px-3" /></a>
           <a href="https://www.linkedin.com/in/jacky-yip-81953318b" target="_blank"><i className="fa-brands fa-linkedin px-3" /></a>
+          <a href="https://www.facebook.com/jacky.yip.908" target="_blank"><i className="fa-brands fa-facebook px-3"/></a>
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>
@@ -75,4 +65,4 @@ function Navbar() {
   )
 };
 
-export default Navbar;
+export default NavBar;

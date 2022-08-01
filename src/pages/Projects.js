@@ -1,9 +1,7 @@
 import React from 'react';
-import CardItem from '../js/CardItem';
-import photo1 from '../../assets/images/img-6.jpg';
-import photo2 from '../../assets/images/img-7.jpg';
-import photo3 from '../../assets/images/img-8.jpg';
-import Cover from '../js/Cover';
+import CardItem from '../components/js/CardItem';
+import { PROJECT_PHOTO_1, PROJECT_PHOTO_2, PROJECT_PHOTO_3 } from '../components/js/Constants';
+import Cover from '../components/js/Cover';
 
 function Projects() {
   return (
@@ -16,13 +14,13 @@ function Projects() {
           <div className="cards__wrapper">
               <div className="cards__items">
                 <CardItem 
-                  src={photo1}
+                  src={PROJECT_PHOTO_1}
                   text="Simple tic tac toe game"
                   label='Mini game'
                   path='/projects/tictactoe'
                 />
                 <CardItem 
-                  src={photo2}
+                  src={PROJECT_PHOTO_2}
                   text="Calculator"
                   label='Tool'
                   path='/projects/calculator'
@@ -36,7 +34,7 @@ function Projects() {
                   path='/projects/minesweeper'
                 />*/}
                 <CardItem 
-                  src={photo3}
+                  src={PROJECT_PHOTO_3}
                   text="To do list app"
                   label='Tool'
                   path='/projects/todolist'

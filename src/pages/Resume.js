@@ -1,9 +1,8 @@
 import React from 'react';
-import '../css/Testing.css';
-import educationphoto1 from '../../assets/images/img-4.jpg';
-import educationphoto2 from '../../assets/images/img-5.jpg';
-import Scrollbar from '../js/Scrollbar';
-import '../css/Scrollbar.css';
+import '../components/css/Testing.css';
+import { RESUME_PHOTO_1, RESUME_PHOTO_2 } from '../components/js/Constants';
+import ScrollBar from '../components/js/ScrollBar';
+import '../components/css/ScrollBar.css';
 
 function Resume() {
   return (
@@ -14,7 +13,7 @@ function Resume() {
                     <h2><i className="fa-solid fa-school px-3" />EDUCATION</h2>
                 </div>
                 <div className="row cardbox">
-                    <img src={educationphoto1} className="img education-part1 col-lg-4"/>
+                    <img src={RESUME_PHOTO_1} className="img education-part1 col-lg-4"/>
                     <div className="resume-card education-part1 col-lg-7">
                         <div className="row">
                             <div className="testing-header">
@@ -40,7 +39,7 @@ function Resume() {
                     </div>
                 </div>
                 <div className="row cardbox">
-                    <img src={educationphoto2} className="img education-part2 col-lg-4"/>
+                    <img src={RESUME_PHOTO_2} className="img education-part2 col-lg-4"/>
                     <div className="resume-card education-part2 col-lg-7">
                         <div className="row">
                             <div className="testing-header">
@@ -166,7 +165,7 @@ function Resume() {
                 </div>
             </div>
         </div>
-        <Scrollbar />
+        <ScrollBar />
     </div>
   )
 };

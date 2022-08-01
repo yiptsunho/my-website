@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ticContext } from "../Pages/TicTacToe";
+import { ticContext } from "../../pages/TicTacToe";
 
 const Prompt = () => {
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import Cover from '../js/Cover';
+import Cover from '../components/js/Cover';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../js/Constants';
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../components/js/Constants';
 
 function Contact() {
   const form = useRef();

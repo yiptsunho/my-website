@@ -1,8 +1,8 @@
 import { useState, useEffect, createContext, useCallback } from 'react';
-import Board from "../js/Board";
-import Prompt from "../js/Prompt";
-import End from "../js/End";
-import { FIRST_TURN, STATE_ARRAY, WIN_MESSAGE, DRAW_MESSAGE } from '../js/Constants';
+import Board from "../components/js/Board";
+import Prompt from "../components/js/Prompt";
+import End from "../components/js/End";
+import { FIRST_TURN, STATE_ARRAY, WIN_MESSAGE, DRAW_MESSAGE } from '../components/js/Constants';
 
 export const ticContext = createContext()
 
@@ -10,7 +10,7 @@ const TicTacToe = () => {
 
   const [turn, setTurn] = useState(FIRST_TURN)
   const [state, setState] = useState(STATE_ARRAY)
-  
+
   const haveWinner = useCallback(() => {
     var win = false
 

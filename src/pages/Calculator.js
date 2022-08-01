@@ -1,6 +1,6 @@
-import Display from '../js/Display';
-import Button from '../js/Button';
-import { useState, useEffect } from 'react';
+import Display from '../components/js/Display';
+import Button from '../components/js/Button';
+import { useState } from 'react';
 
 const Calculator = () => {
 

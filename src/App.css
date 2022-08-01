@@ -93,15 +93,15 @@ max-height: 262.58px;
 */
 
 .resume {
-  background-image: url("./assets/images/img-1.jpg");
+  background-image: url("../public/images/img-1.jpg");
 }
 
 .projects {
-  background-image: url("./assets/images/img-2.jpg");
+  background-image: url("../public/images/img-2.jpg");
 }
 
 .contact {
-  background-image: url("./assets/images/img-3.jpg");
+  background-image: url("../public/images/img-3.jpg");
 }
 
 .App {
