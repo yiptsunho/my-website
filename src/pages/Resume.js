@@ -112,6 +112,7 @@ function Resume() {
                             <div className="testing-text" style={{opacity: "100%"}}>
                                 <h5><i className="fa-solid fa-certificate px-3 py-3 icon-gold" />HTML</h5>
                                 <h5><i className="fa-solid fa-certificate px-3 py-3 icon-gold" />CSS</h5>
+                                <h5><i className="fa-solid fa-certificate px-3 py-3 icon-gold" />JS</h5>
                             </div>
                         </div>
                         <div className="col-sm">
@@ -129,7 +130,6 @@ function Resume() {
                         </div>
                         <div className="col-sm">
                             <div className="testing-text" style={{opacity: "100%"}}>
-                                <h5><i className="fa-solid fa-certificate px-3 py-3 icon-gold" />Node JS</h5>
                                 <h5><i className="fa-solid fa-certificate px-3 py-3 icon-gold" />Python</h5>
                             </div>
                         </div>
