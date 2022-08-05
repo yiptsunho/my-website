@@ -57,10 +57,10 @@ const TicTacToe = () => {
     if (haveWinner()) {
       var winner = (turn === "X") ? "O" : "X"
       window.alert(winner + WIN_MESSAGE)
-      reloadPage()
+      //reloadPage()
     } else if (draw()) {
       window.alert(DRAW_MESSAGE)
-      reloadPage()
+      //reloadPage()
     }
   }, [state])
 
