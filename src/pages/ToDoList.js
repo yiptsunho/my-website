@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useReducer } from "react";
+import { useEffect, useState, useRef } from "react";
 import { API_GET_DATA } from '../components/js/Constants';
 import Edit from "../components/js/Edit";
 import List from "../components/js/List";

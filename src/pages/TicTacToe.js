@@ -11,6 +11,10 @@ const TicTacToe = () => {
   const [turn, setTurn] = useState(FIRST_TURN)
   const [state, setState] = useState(STATE_ARRAY)
 
+  const reloadPage = () => {
+    window.location.reload()
+  }
+
   const haveWinner = useCallback(() => {
     var win = false
 
@@ -53,10 +57,10 @@ const TicTacToe = () => {
     if (haveWinner()) {
       var winner = (turn === "X") ? "O" : "X"
       window.alert(winner + WIN_MESSAGE)
-      window.location.reload()
+      reloadPage()
     } else if (draw()) {
       window.alert(DRAW_MESSAGE)
-      window.location.reload()
+      reloadPage()
     }
   }, [state])
 

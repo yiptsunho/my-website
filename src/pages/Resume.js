@@ -13,7 +13,7 @@ function Resume() {
                     <h2><i className="fa-solid fa-school px-3" />EDUCATION</h2>
                 </div>
                 <div className="row cardbox">
-                    <img src={RESUME_PHOTO_1} className="img education-part1 col-lg-4"/>
+                    <img src={RESUME_PHOTO_1} alt="" className="img education-part1 col-lg-4"/>
                     <div className="resume-card education-part1 col-lg-7">
                         <div className="row">
                             <div className="testing-header">
@@ -39,7 +39,7 @@ function Resume() {
                     </div>
                 </div>
                 <div className="row cardbox">
-                    <img src={RESUME_PHOTO_2} className="img education-part2 col-lg-4"/>
+                    <img src={RESUME_PHOTO_2} alt="" className="img education-part2 col-lg-4"/>
                     <div className="resume-card education-part2 col-lg-7">
                         <div className="row">
                             <div className="testing-header">

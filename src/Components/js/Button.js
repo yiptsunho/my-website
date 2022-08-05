@@ -12,7 +12,7 @@ const Button = ({ result, setResult }) => {
     }
 
     function addNumber(number) {
-        if (result == "0") {
+        if (result === "0") {
             setResult(number)
         } else {
             setResult(prev => prev + number)
@@ -24,7 +24,7 @@ const Button = ({ result, setResult }) => {
     }
 
     function addBracket(bracket) {
-        if (result == "0") {
+        if (result === "0") {
             setResult(bracket)
         } else {
             setResult(prev => prev + bracket)
